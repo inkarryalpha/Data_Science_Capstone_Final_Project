@@ -1,0 +1,51 @@
+---
+title: "Data Science Capstone Final Project"
+author: "Cristhian Antonio Toribio Amaro"
+date: "Oct 10, 2020"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Introduction
+the presentation of the final project from Coursera Data Science Course, this project consist on create a prediction algorithm, and to provide an interface that can be accessed by others.<br>
+
+We have a shiny app that takes a input phrare (one or multiple words) in a text box input and outputs a prediction of the next word.<br>
+
+- Shiny app [here](https://inkarry.shinyapps.io/Data-Scien-Capstone-Final-Project/?_ga=2.76881437.947718519.1603166172-574591246.1603166172)
+
+
+## Word Prediction Algorithm
+
+1. Algoithm checks how many words was imput.
+2. Select the n-grams table.
+3. The most frequent next word will be shown as the return value.
+4. If not find the word in the n-gram table, The output will be "The" (The most commond word).
+<br>
+Code is available on [GitHub](https://github.com/DWenke/Data-Science-Capstone-Final-Project/)
+Further work can include expanding both the number of data sources & number of n-grams
+Enjoy the app!
+
+## Data Gathering & Cleansing 
+
+- Merged data from the 3 Data Sources into one data file (Blogs, Twitter & News).
+- Cleansed data including converting to lowercase, stripping white space, and removing punctuation & numbers.
+- Created Bigram, Trigram and Quadgram n-grams.
+- Extracted term-count tables from the n-grams.
+- Sorted in descending order based on frequency.
+- Saved n-gram objects.
+
+## Experience using the app
+
+The final data product is created as shiny app and is available [here](https://inkarry.shinyapps.io/Data-Scien-Capstone-Final-Project/?_ga=2.76881437.947718519.1603166172-574591246.1603166172)
+
+An input field takes a text, single word or sentence.<br>
+The result (next word) will be displayed on the right side.<br>
+In addition, the dataset which is used for the prediction (bigram, trigram, qudgram) is displayed.<br>
+Application is available on , see link above. <br>
+
+1. The app uses the correct prediction algorithm for words prediction.
+2. The results shown uses the functions for prediction.
+
